@@ -1,0 +1,56 @@
+#include "martini_v3.0.4.itp"
+#include "martini_v3.0_ions.itp"
+#include "martini_v3.0_phospholipids.itp"
+#include "martini_v3.0_solvents.itp"
+#include "martini_mmpe_4B_3.0.itp"
+#include "martini_pmpe_4B_v3.0.itp"
+#include "martini_pnpe_4B_v3.0.itp"
+#include "martini_pmpg_4B_v3.0.itp"
+#include "martini_pnpg_4B_v3.0.itp"
+#include "martini_mppm-cl_4B_v3.0.itp"
+#include "martini_mppv-cl_4B_v3.0.itp"
+#include "martini_mvpe_4B_3.0.itp"
+#include "martini_opmn-cl_4B_v3.0.itp"
+#include "martini_opmv-cl_4B_v3.0.itp"
+#include "martini_ovpe_v3.0.itp"
+#include "martini_ovpg_v3.0.itp"
+#include "martini_pvpe_v3.0.itp"
+#include "martini_pvpg_v3.0.itp"
+
+
+[ system ]
+; name
+INSANE! Membrane UpperLeaflet>PMCL:PMPG:POPG:PMPE:POPE:MMPE=1.0:3.0:1.3:8.9:2.5:1.8 LowerLeaflet>PMCL:PMPG:POPG:PMPE:POPE:MMPE=1.0:3.0:1.3:8.9:2.5:1.8
+
+[ molecules ]
+; name  number
+OPMN             2
+OPMV             2
+MPPV             4
+MPPM             1
+PMPG            24
+PNPG             4
+OVPG             2
+PVPG             8
+POPG             4
+OVPE            28
+PMPE            34
+PNPE            11
+MVPE            17
+PVPE            52
+OPMN             2
+OPMV             2
+MPPV             4
+MPPM             1
+PMPG            24
+PNPG             4
+OVPG             2
+PVPG             8
+POPG             4
+OVPE            28
+PMPE            34
+PNPE            11
+MVPE            17
+PVPE            52
+W             4361
+NA             120

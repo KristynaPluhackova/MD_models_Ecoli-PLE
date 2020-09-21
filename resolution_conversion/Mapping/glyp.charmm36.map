@@ -1,0 +1,72 @@
+[ molecule ]
+GLYP
+
+[ martini ]
+BB C1A C2A C3A C4A
+
+[ mapping ]
+charmm27 charmm36
+
+[ atoms ]
+    1     N    BB
+    2    HN    BB
+    3    CA    BB
+    4    HA1    BB
+    5    HA2    BB
+    6     C    BB
+    7     O    BB
+   11	 C1   BB BB BB C1A
+   12    OC 
+   13    C2    BB C1A
+   14   H21 
+   15   H22 
+   16    C3    BB C1A C1A C1A
+   17   H31 
+   18   H32 
+   19    C4     C1A
+   20   H41 
+   21   H42 
+   22    C5    C1A C1A C1A C2A
+   23   H51 
+   24   H52 
+   25    C6     C1A C2A
+   26   H61 
+   27   H62 
+   28    C7    C1A C2A C2A C2A
+   29   H71 
+   30   H72 
+   31    C8    C2A
+   32   H81 
+   33   H82 
+   34    C9   C2A C2A C2A C3A
+   35   H91 
+   36   H92 
+   37   C10   C2A C3A
+   38  H101 
+   39  H102 
+   40   C11   C2A C3A C3A C3A
+   41  H111 
+   42  H112 
+   43   C12    C3A
+   44  H121 
+   45  H122 
+   46   C13   C3A C3A C3A C4A
+   47  H131 
+   48  H132 
+   49   C14   C3A C4A
+   50  H141 
+   51  H142 
+   52   C15   C3A C4A C4A C4A
+   53  H151 
+   54  H152 
+   55   C16 	C4A
+   56  H161 
+   57  H162 
+   58  H163 
+
+; acyl esters
+[trans]
+C2 C1 SG CB
+[ out ]
+OC C1 SG C2
+

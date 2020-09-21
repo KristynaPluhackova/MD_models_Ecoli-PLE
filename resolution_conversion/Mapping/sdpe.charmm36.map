@@ -1,0 +1,195 @@
+; created by stefan 13.9.2017
+[ molecule ]
+SDPE
+
+[ martini ]
+NH3 PO4 GL1 GL2 D1A D2A D3A D4A D5A D6A C1B C2B C3B C4B C5B
+;
+; NH3-PO4-GL1-D1A-D2A-D3A-D4A-D5A-D6B
+;         |
+;         GL2-C1B-C2B-C3B-C4B-C5B
+
+
+[ mapping ]
+charmm27 charmm36
+
+[ atoms ]
+    1     N   NH3	
+    2   HN1   NH3
+    3   HN2   NH3
+    4   HN3   NH3
+    5   C12   NH3 NH3 PO4
+    6  H12A   NH3 NH3 PO4
+    7  H12B   NH3 NH3 PO4
+    8   C11   NH3 PO4 PO4
+    9  H11A   NH3 PO4 PO4
+   10  H11B   NH3 PO4 PO4
+   11     P   PO4
+   12   O13   PO4
+   13   O14   PO4
+   14   O12   PO4 PO4 PO4 NH3
+   15   O11   PO4 PO4 GL1
+   16    C1   GL1 GL1 PO4
+   17    HA   GL1 GL1 PO4
+   18    HB   GL1 GL1 PO4
+   19    C2   GL1 GL1 GL2
+   20    HS   GL1 GL1 GL2
+   21   O21   GL1 GL1 GL2 D1A
+   22   C21   GL1 GL1 GL1 D1A
+   23   O22   GL1 GL1 GL1 D1A
+   24   C22   D1A GL1
+   25   H2R   D1A GL1
+   26   H2S   D1A GL1
+   27    C3   GL2 GL2 GL2 PO4
+   28    HX   GL2 GL2 GL2 PO4
+   29    HY   GL2 GL2 GL2 PO4
+   30   O31   GL2
+   31   C31   GL2 GL1 C1B
+   32   O32   GL2
+   33   C32   C1B C1B GL2
+   34   H2X   C1B C1B GL2
+   35   H2Y   C1B C1B GL2
+   36   C23   D1A D1A GL1
+   37   H3R   D1A D1A GL1
+   38   H3S   D1A D1A GL1
+   39   C24   D1A D1A D1A GL1
+   40   H4R   D1A D1A D1A GL1
+   41   C25   D1A D1A D2A
+   42   H5R   D1A D1A D2A
+   43   C26   D1A D2A
+   44   H6R   D1A D2A
+   45   H6S   D1A D2A
+   46   C27   D1A D2A D2A 
+   47   H7R   D1A D2A D2A
+   48   C28   D2A D2A D3A
+   49   H8R   D2A D2A D3A
+   50   C29   D2A D3A 
+   51   H9R   D2A D3A
+   52   H9S   D2A D3A
+   53  C210   D2A D3A D3A 
+   54  H10R   D2A D3A D3A
+   55  C211   D3A D3A D4A
+   56  H11R   D3A D3A D4A
+   57  C212   D3A D4A
+   58  H12R   D3A D4A
+   59  H12S   D3A D4A
+   60  C213   D3A D4A D4A
+   61  H13R   D3A D4A D4A
+   62  C214   D4A D4A D5A
+   63  H14R   D4A D4A D5A
+   64  C215   D4A D5A
+   65  H15R   D4A D5A
+   66  H15S   D4A D5A
+   67  C216   D4A D5A D5A
+   68  H16R   D4A D5A D5A
+   69  C217   D5A D5A D5A D6A
+   70  H17R   D5A D5A D5A D6A
+   71  C218   D5A D5A D6A
+   72  H18R   D5A D5A D6A
+   73  H18S   D5A D5A D6A
+   74  C219   D5A D6A  
+   75  H19R   D5A D6A
+   76  C220   D6A D6A D5A
+   77  H20R   D6A D6A D5A
+   78  C221   D6A D6A D6A D5A
+   79  H21R   D6A D6A D6A D5A
+   80  H21S   D6A D6A D6A D5A
+   81  C222   D6A 
+   82  H22R   D6A 
+   83  H22S   D6A 
+   84  H22T   D6A 
+   85   C33   C1B   
+   86   H3X   C1B
+   87   H3Y   C1B
+   88   C34   C1B C1B C2B
+   89   H4X   C1B C1B C2B
+   90   H4Y   C1B C1B C2B
+   91   C35   C1B C2B
+   92   H5X   C1B C2B
+   93   H5Y   C1B C2B
+   94   C36   C2B C2B C1B
+   95   H6X   C2B C2B C1B
+   96   H6Y   C2B C2B C1B
+   97   C37   C2B
+   98   H7X   C2B
+   99   H7Y   C2B
+  100   C38   C2B C2B C3B
+  101   H8X   C2B C2B C3B
+  102   H8Y   C2B C2B C3B
+  103   C39   C2B C3B
+  104   H9X   C2B C3B
+  105   H9Y   C2B C3B
+  106  C310   C2B C3B C3B
+  107  H10X   C2B C3B C3B
+  108  H10Y   C2B C3B C3B
+  109  C311   C3B
+  110  H11X   C3B
+  111  H11Y   C3B
+  112  C312   C3B C3B C4B
+  113  H12X   C3B C3B C4B
+  114  H12Y   C3B C3B C4B
+  115  C313   C3B C4B
+  116  H13X   C3B C4B
+  117  H13Y   C3B C4B
+  118  C314   C4B C4B C3B
+  119  H14X   C4B C4B C3B
+  120  H14Y   C4B C4B C3B
+  121  C315   C4B
+  122  H15X   C4B
+  123  H15Y   C4B
+  124  C316   C4B C4B C5B
+  125  H16X   C4B C4B C5B
+  126  H16Y   C4B C4B C5B
+  127  C317   C4B C5B C5B
+  128  H17X   C4B C5B C5B
+  129  H17Y   C4B C5B C5B
+  130  C318   C5B
+  131  H18X   C5B
+  132  H18Y   C5B
+  133  H18Z   C5B
+
+;making R stereoisomer- placing HS
+[chiral]
+HS C2 O21 C1 C3
+
+; acyl esters
+[trans]
+C22 C21 O21 C2
+[ out ]
+O22 C21 O21 C22
+[trans]
+C32 C31 O31 C3
+[out]
+O32 C31 O31 C32
+
+;cis bonds in lipid chains
+[ out ]
+H4R C24 C23 C25
+[ cis ]
+H5R C25 C24 H4R
+
+[ out ]
+H7R C27 C26 C28
+[ cis ]
+H8R C28 C27 H7R
+
+[ out ]
+H10R C210 C29 C211
+[ cis ]
+H11R C211 C210 H10R
+
+[ out ]
+H13R C213 C212 C214
+[ cis ]
+H14R C214 C213 H13R
+
+[ out ]
+H16R C216 C215 C217
+[ cis ]
+H17R C217 C216 H16R
+
+[ out ]
+H19R C219 C218 C220
+[ cis ]
+H20R C220 C219 H19R
+

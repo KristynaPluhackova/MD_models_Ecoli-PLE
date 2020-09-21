@@ -1,0 +1,104 @@
+[ molecule ]
+CYSG
+
+[ martini ]
+BB SC1 C1A C2A C3A C4A C5A
+
+[ mapping ]
+charmm27 charmm36
+
+[ atoms ]
+    1     N    BB
+    2    HN    BB
+    3    CA    BB
+    4    HA    BB
+    5     C    BB
+    6     O    BB
+    7    CB   SC1 BB
+    8   HB1   SC1 BB
+    9   HB2   SC1 BB
+   10    SG   SC1
+   11	 C1   SC1 SC1 SC1 C1A
+   11	H11   
+   11	H12   
+   13    C2    SC1 C1A
+   14   H21 
+   16    C3    SC1 C1A C1A C1A
+   19    C4     
+   20   H41 
+   21   H42 
+   21   H43 
+   22    C5    C1A 
+   23   H51 
+   24   H52 
+   25    C6    C1A C1A C2A
+   26   H61 
+   27   H62 
+   28    C7    C1A C2A C2A
+   29   H71 
+   31    C8    C2A
+   34    C9   
+   35   H91 
+   36   H92 
+   36   H93 
+   37   C10   C2A C3A C2A
+   38  H101 
+   39  H102 
+   40   C11   C2A C3A C3A 
+   41  H111 
+   42  H112 
+   43   C12    C3A
+   44  H121 
+   46   C13   C3A C3A C4A
+   49   C14   
+   50  H141 
+   51  H142 
+   51  H143 
+   52   C15   C3A C4A C4A
+   53  H151 
+   54  H152 
+   55   C16 	C4A
+   56  H161 
+   57  H162 
+   52   C17   C5A C4A C4A
+   53  H151
+   55   C18     C4A C5A C5A
+   49   C19   
+   50  H191   
+   51  H192   
+   51  H193
+   49   C20   C5A
+   50  H201   
+   51  H202   
+   51  H203
+
+[ chiral ]
+  CB     CA    N    C
+  HB1    CA    N    C
+  HB2    CA    N    C
+
+[ chiral ]
+  HA     CA    N    CB    C ; L-Cys
+; HA     CA    N    C    CB ; D-Cys
+
+; geranyl units
+[ out ]
+C4 C3 C2 C5
+H41 C3 C2 C5
+H42 C3 C2 C5
+H43 C3 C2 C5
+[ out ] 
+C9 C8 C7 C10
+H91 C8 C7 C10
+H92 C8 C7 C10
+H93 C8 C7 C10
+[ out ]
+C14 C13 C12 C15
+H141 C13 C12 C15
+H142 C13 C12 C15
+H143 C13 C12 C15
+[ out ] 
+C19 C18 C17 C20
+H191 C18 C17 C20
+H192 C18 C17 C20
+H193 C18 C17 C20
