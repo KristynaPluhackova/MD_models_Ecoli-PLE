@@ -1,0 +1,8 @@
+CL cardiolipin
+PE phosphatidylethanolamine
+PG phosphatidylglycerol
+
+CP cytoplasmic layer
+EC extracellular layer
+
+top5 	Average binding times per lipid and layer of 5% longest binding events longer than 10 ns.

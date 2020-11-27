@@ -1,0 +1,6 @@
+lipid enrichment scheme:
+--------------------------
+	PG	CL	PE
+PG	x	x	x
+CL	x	x	x	
+PE	x	x	x
