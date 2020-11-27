@@ -1,0 +1,10 @@
+		Ea[kcal/mol]	error of the linear fit
+-------------------------------------------------------
+experiment	11.0465 	0.492203
+Avanti		14.2157 	0.689522
+SimplePOM	16.5825 	1.00428
+SimplePVJ	18.3681 	1.59901
+SimplePVM	13.8616 	0.502337
+-------------------------------------------------------
+
+experimental data was measured within the scope of this paper

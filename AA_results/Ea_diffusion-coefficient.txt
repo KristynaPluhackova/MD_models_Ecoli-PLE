@@ -1,0 +1,9 @@
+                Ea[kcal/mol]
+----------------------------
+experiment	8.25
+Avanti		8.98051
+SimplePOM	9.29159
+SimplePVJ	9.59271
+SimplePVM	9.72316
+---------------------------
+experimental data from Lindblom, G., Orädd, G., Rilfors, L., Morein, S.: Regulation of lipid composition in Acholeplasma laidlawii and Escherichia coli membranes: NMR studies of lipid lateral diffusion at different growth temperatures. Biochemistry 41(38), 11512–11515 (2002)
