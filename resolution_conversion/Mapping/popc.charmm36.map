@@ -1,14 +1,13 @@
-; Made by Kri 
+; Made by Kri on 210514 for 4 bead martini2 oleoyl and double bond in the A chain
 ; take care that the hydrogens in the cis bond are named properly, i.e. H9R and H10R instead of H91 and H101
 
-
 [ molecule ]
-POPE
+POPC
 
 [ martini ]
-NH3 PO4 GL1 GL2 C1A D2A C3A C4A C1B C2B C3B C4B
+NC3 PO4 GL1 GL2 C1A D2A C3A C4A C1B C2B C3B C4B
 ;
-; NH3-PO4-GL1-C1A-D2A-C3A-C4A
+; NC3-PO4-GL1-C1A-D2A-C3A-C4A
 ;         |
 ;         GL2-C1B-C2B-C3B-C4B
 
@@ -17,16 +16,26 @@ charmm27 charmm36
 
 [ atoms ]
 ; Terminal head group (choline)
-    1     N   NH3
-    2   HN1   NH3
-    3   HN2   NH3
-    4   HN3   NH3
-    5   C12   NH3 NH3 PO4
-    6  H12A   NH3 NH3 PO4
-    7  H12B   NH3 NH3 PO4
-    8   C11   NH3 PO4 PO4
-    9  H11A   NH3 PO4 PO4
-   10  H11B   NH3 PO4 PO4
+; Terminal head group (choline)
+    1     N   NC3
+    2   C13   NC3
+    3  H13A   NC3
+    4  H13B   NC3
+    5  H13C   NC3
+    6   C14   NC3
+    7  H14A   NC3
+    8  H14B   NC3
+    9  H14C   NC3
+   10   C15   NC3
+   11  H15A   NC3
+   12  H15B   NC3
+   13  H15C   NC3
+   14   C12   NC3 NC3 NC3 PO4
+   15  H12A   NC3 NC3 NC3 PO4
+   16  H12B   NC3 NC3 NC3 PO4
+   17   C11   NC3 PO4
+   18  H11A   NC3 PO4
+   19  H11B   NC3 PO4
 ; Phosphate group
    20     P   PO4
    21   O13   PO4
@@ -74,9 +83,9 @@ charmm27 charmm36
    61   H8R   
    62   H8S   
    63   C29   D2A D2A C3A
-   64   H9R   
+   64   H9R   D2A C3A
    65  C210   C3A C3A D2A
-   66  H10R  
+   66  H10R   D2A C3A
    67  C211   C3A C3A C3A D2A
    68  H11R   
    69  H11S   
@@ -122,11 +131,11 @@ charmm27 charmm36
   108   H8X   
   109   H8Y   
   110   C39   C2B C2B C3B
-  111   H9X  
-  111   H9Y  
+  111   H9X   
+  111   H9Y   
   112  C310   C3B C3B C2B 
-  113  H10X  
-  113  H10Y  
+  113  H10X   
+  113  H10Y   
   114  C311   C3B C3B C3B C2B
   115  H11X   
   116  H11Y   
@@ -179,3 +188,16 @@ H10R C210 C29 C28
 [ out ]
 C211 C210 H10R C29
 H9R C29 C210 C28
+
+;;;making a choline group
+[out]
+C14 N C13 C12
+H14A N C13 C12
+H14B N C13 C12
+H14C N C13 C12
+
+[ chiral ]
+C15 N C12 C13 C14
+H15A N C12 C13 C14
+H15B N C12 C13 C14
+H15C N C12 C13 C14
