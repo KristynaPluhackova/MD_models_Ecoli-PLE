@@ -12,6 +12,7 @@
 ;   JCTC, 6:1638-1649, 2010. doi:10.1021/ct900654e
 ;
 ;   Cyclic propan in the chain A parametrized and added by Kri
+; corrected on 19.11.2021
 
 
 [ moleculetype ]
@@ -64,7 +65,7 @@ MPPM 1
   13 14 1 0.38 	3800
   14 15 1 0.305 4000
 
-  15 16 1 0.51 	3500
+  14 16 1 0.51 	3500		;corrected from 15 16 on 19.11.2021
   16 17 1 0.47 	3800
   17 18 1 0.47 	3800
   18 19 1 0.47 	3800
